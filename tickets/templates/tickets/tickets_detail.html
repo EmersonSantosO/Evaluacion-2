@@ -1,0 +1,28 @@
+{% extends 'tickets/home.html' %}
+
+{% block content %}
+
+{% comment %} <main>
+    <div>
+        
+        
+       
+        <h2> {{ object.soporte }} </h2>
+    </div>
+
+</main> {% endcomment %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="{{object.soporte.imagen.url}}" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+            <h3>Descripcion del tickets</h3>
+            <P>ID: {{ object.id }}</p>
+            <p>Titulo: {{ object.titulo }} </p>
+            <p>Descripcion: {{ object.descripcion }} </p>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
